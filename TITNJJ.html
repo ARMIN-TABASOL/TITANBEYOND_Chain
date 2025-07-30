@@ -1,0 +1,370 @@
+𝗘𝗱𝘄𝗮𝗿𝗱:
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Titan In Tech & Network (TITN)</title>
+  <link rel="icon" href="https://uploadkon.ir/uploads/0a0026_25IMG-20250725-104808-741.jpg" type="image/jpeg" />
+  <meta name="description" content="Titan In Tech & Network (TITN) is a fast and real token on the Solana blockchain." />
+  <meta name="keywords" content="TITN, Titan In Tech Network, Solana, token, crypto, blockchain, NFT, staking, GameFi" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --gold: #d4af37;
+      --purple: #8a2be2;
+      --cyan: #00ffff;
+      --black-bg: #121212;
+      --btn-bg: #000000cc;
+      --btn-border: var(--purple);
+      --text-gold: var(--gold);
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      background-color: var(--black-bg);
+      color: var(--gold);
+      font-family: 'Poppins', sans-serif;
+      margin: 0;
+      padding: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    a {
+      color: var(--gold);
+      font-weight: 600;
+      transition: color 0.3s ease;
+      text-decoration: none;
+    }
+
+    a:hover,
+    a:focus {
+      color: var(--purple);
+      outline: none;
+    }
+
+    header {
+      background-color: #121212cc;
+      backdrop-filter: saturate(180%) blur(10px);
+      border-bottom: 1px solid var(--purple);
+      position: fixed;
+      width: 100%;
+      z-index: 50;
+      top: 0;
+      left: 0;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.7);
+    }
+
+    .btn-purple-ring {
+      background-color: var(--btn-bg);
+      border: 2.5px solid var(--btn-border);
+      color: var(--gold);
+      padding: 0.75rem 2rem;
+      border-radius: 9999px;
+      font-weight: 600;
+      box-shadow: 0 0 8px var(--purple);
+      cursor: pointer;
+      text-align: center;
+      display: inline-block;
+      transition: background-color 0.3s ease, box-shadow 0.3s ease, color 0.3s ease;
+    }
+
+    .btn-purple-ring:hover,
+    .btn-purple-ring:focus {
+      background-color: var(--purple);
+      color: white;
+      box-shadow: 0 0 12px var(--purple);
+    }
+
+    main {
+      padding-top: 96px;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding-left: 1rem;
+      padding-right: 1rem;
+      flex-grow: 1;
+    }
+
+    section {
+      margin-bottom: 4rem;
+      background-color: #1a1a1a;
+      border-radius: 1rem;
+      padding: 2rem;
+      box-shadow: 0 0 15px #8a2be2aa;
+    }
+
+    h1, h2, h3 {
+      color: var(--gold);
+      text-shadow: 0 0 8px rgba(212, 175, 55, 0.7);
+    }
+
+    h1 {
+      font-size: 3.5rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 2.25rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+      border-bottom: 3px solid var(--purple);
+      display: inline-block;
+      padding-bottom: 0.5rem;
+    }
+
+    ul {
+      list-style-type: none;
+      padding-left: 0;
+      margin: 0;
+    }
+
+    ul li {
+      margin-bottom: 0.75rem;
+      font-size: 1.125rem;
+      color: #ccc;
+      word-break: break-word;
+    }
+
+    code {
+      background-color: #000;
+      padding: 0.25rem 0.5rem;
+      border-radius: 0.25rem;
+      font-family: monospace;
+    }
+
+    .team-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .team-member {
+      background-color: #222;
+      padding: 1.5rem;
+      border-radius: 1rem;
+      text-align: center;
+      transition: transform 0.3s ease;
+      cursor: default;
+      box-shadow: 0 0 10px #8a2be2aa;
+    }
+
+    .team-member:hover {
+      transform: scale(1.05);
+    }
+
+.team-avatar {
+      background-color: var(--purple);
+      color: white;
+      font-weight: 700;
+      width: 64px;
+      height: 64px;
+      border-radius: 9999px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 2rem;
+      margin: 0 auto 1rem;
+    }
+
+    .team-name {
+      font-weight: 700;
+      color: var(--gold);
+      margin-bottom: 0.25rem;
+    }
+
+    .team-role {
+      color: #9b59b6;
+      margin-bottom: 0.5rem;
+    }
+
+    .team-link {
+      color: #9b59b6;
+      text-decoration: underline;
+      font-size: 0.9rem;
+    }
+
+    @media (max-width: 768px) {
+      h1 { font-size: 2.5rem; }
+      .team-list { grid-template-columns: 1fr 1fr; }
+    }
+
+    @media (max-width: 480px) {
+      .team-list { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container mx-auto flex items-center justify-between p-4 max-w-7xl flex-wrap md:flex-nowrap gap-4">
+      <a href="#home" class="flex items-center space-x-3">
+        <img src="https://uploadkon.ir/uploads/0a0026_25IMG-20250725-104808-741.jpg" alt="TITN Logo" class="w-12 h-12 rounded-full object-cover" />
+        <span class="text-2xl font-bold text-gold">Titan In Tech Network</span>
+      </a>
+      <nav id="desktop-menu" class="hidden md:flex space-x-8 font-semibold text-gold">
+        <a href="#home">Home</a>
+        <a href="#token">Token Info</a>
+        <a href="#buy">Buy</a>
+        <a href="#team">Team</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#contact">Contact</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+      <button id="menu-btn" class="md:hidden">
+        <svg class="w-8 h-8 text-purple-600" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M4 8h16M4 16h16" />
+        </svg>
+      </button>
+    </div>
+    <nav id="mobile-menu" class="hidden flex-col space-y-4 px-6 py-4 md:hidden container mx-auto w-full max-w-md">
+      <a href="#home">Home</a>
+      <a href="#token">Token Info</a>
+      <a href="#buy">Buy</a>
+      <a href="#team">Team</a>
+      <a href="#roadmap">Roadmap</a>
+      <a href="#contact">Contact</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+  </header>
+  <main class="flex-grow pt-24">
+    <section id="home" class="text-center">
+      <h1>Titan In Tech Network (TITN)</h1>
+      <p class="text-gray-300 max-w-3xl mx-auto text-lg md:text-xl mb-8">Titan In Tech Network is a fast and real token on the Solana blockchain. Designed for builders, leaders, and future-makers.</p>
+      <a href="#buy" class="btn-purple-ring mx-auto block max-w-max">Buy TITN Token Now</a>
+    </section>
+
+    <section id="token">
+      <h2>🔗 Token Information</h2>
+      <ul>
+        <li><strong>Mint Address:</strong> <code>Gxo8y3Vri52X9AChKEHHL3c9GCCwt6tPpPCQpdq3pump</code></li>
+        <li><strong>Seller Wallet:</strong> <code>7rJJD5gy9GuUCZcCX6ES8PNw53LsAgKKinewrnPTp29J</code></li>
+        <li><strong>Total Supply:</strong> 1,000,000,000 TITN</li>
+        <li><strong>Current Price:</strong> 1 TITN = $0.0000053</li>
+        <li><strong>Network:</strong> Solana</li>
+        <li><a href="https://phantom.com/tokens/solana/Gxo8y3Vri52X9AChKEHHL3c9GCCwt6tPpPCQpdq3pump" target="_blank">View in Phantom</a></li>
+        <li><a href="https://pump.fun/token/Gxo8y3Vri52X9AChKEHHL3c9GCCwt6tPpPCQpdq3pump" target="_blank">View on Pump.fun</a></li>
+      </ul>
+    </section>
+
+    <section id="buy">
+      <h2>🚀 Buy Titan In Tech Network</h2>
+      <p class="text-gray-200 mb-6 text-lg max-w-xl mx-auto text-center">Connect your Phantom wallet and securely buy the TITN token via official platforms.</p>
+      <div class="flex justify-center gap-6 flex-wrap">
+        <a href="https://phantom.com/tokens/solana/Gxo8y3Vri52X9AChKEHHL3c9GCCwt6tPpPCQpdq3pump" target="_blank" class="btn-purple-ring">Buy via Phantom</a>
+        <a href="https://pump.fun/token/Gxo8y3Vri52X9AChKEHHL3c9GCCwt6tPpPCQpdq3pump" target="_blank" class="btn-purple-ring">Buy via Pump.fun</a>
+      </div>
+    </section>
+
+<section id="team">
+      <h2>👨‍💻 Meet the Team</h2>
+      <ul class="team-list">
+        <li class="team-member">
+          <div class="team-avatar">A</div>
+          <h3 class="team-name">Armin Oji</h3>
+          <p class="team-role">Lead Developer & Creator</p>
+          <a href="https://t.me/TeIgramn" class="team-link">@TeIgramn</a>
+        </li>
+        <li class="team-member">
+          <div class="team-avatar">A</div>
+          <h3 class="team-name">Amir Hossein Rostami</h3>
+          <p class="team-role">Community Manager</p>
+          <a href="https://t.me/Amirnobody123" class="team-link">@Amirnobody123</a>
+        </li>
+        <li class="team-member">
+          <div class="team-avatar">A</div>
+          <h3 class="team-name">Aria Parniya</h3>
+          <p class="team-role">Strategy & Partnerships</p>
+        </li>
+        <li class="team-member">
+          <div class="team-avatar">A</div>
+          <h3 class="team-name">Alireza Azizi</h3>
+          <p class="team-role">Blockchain Developer</p>
+          <a href="https://t.me/AlirezaAziziDev" class="team-link">@AlirezaAziziDev</a>
+        </li>
+      </ul>
+    </section>
+
+<section id="roadmap">
+      <h2>📈 Roadmap</h2>
+      <ul>
+        <li><strong>Q2 2025:</strong> Token Launch, Website Release, Initial Listings</li>
+        <li><strong>Q3 2025:</strong> Community Expansion, Marketing Push, NFT Launch</li>
+        <li><strong>Q4 2025:</strong> Staking Platform, GameFi Integrations</li>
+        <li><strong>Q1 2026:</strong> Cross-chain Bridge, CEX Listings, Ecosystem Growth</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>📬 Contact Us</h2>
+      <p class="text-gray-300 mb-4">For partnerships, support, or inquiries, reach out via:</p>
+      <ul>
+        <li><strong>Email:</strong> <a href="mailto:titantech.network@gmail.com">titantech.network@gmail.com</a></li>
+        <li><strong>Telegram Group:</strong> <a href="https://t.me/titanintech" target="_blank">@titanintech</a></li>
+        <li><strong>Twitter:</strong> <a href="https://twitter.com/titantechnet" target="_blank">@titantechnet</a></li>
+      </ul>
+    </section>
+
+    <section id="faq">
+      <h2>❓ Frequently Asked Questions</h2>
+      <ul>
+        <li><strong>What is TITN Token?</strong><br />
+          TITN is a utility and community token built on the Solana blockchain, designed for tech-driven innovation and network support.</li>
+
+        <li><strong>Where can I buy TITN?</strong><br />
+          You can buy TITN via Phantom wallet or Pump.fun using the links above.</li>
+
+        <li><strong>Is TITN audited?</strong><br />
+          An audit process is underway. We’ll publish the results once completed to ensure transparency and trust.</li>
+
+        <li><strong>What's the total supply?</strong><br />
+          The maximum supply is capped at 1,000,000,000 TITN tokens.</li>
+
+        <li><strong>What's the future use of TITN?</strong><br />
+          TITN will be used for governance, access to special features in our ecosystem, and staking rewards.</li>
+      </ul>
+    </section>
+  </main>
+
+<footer>
+    <p>© 2025 Titan In Tech Network. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Toggle Mobile Menu
+    const menuBtn = document.getElementById("menu-btn");
+    const mobileMenu = document.getElementById("mobile-menu");
+
+    menuBtn.addEventListener("click", () => {
+      const expanded = menuBtn.getAttribute("aria-expanded") === "true";
+      menuBtn.setAttribute("aria-expanded", !expanded);
+      mobileMenu.classList.toggle("hidden");
+    });
+
+    // FAQ Toggle
+    const faqItems = document.querySelectorAll("#faq li");
+    faqItems.forEach((item) => {
+      const question = item.querySelector("strong");
+      question.style.cursor = "pointer";
+      question.addEventListener("click", () => {
+        const p = question.nextElementSibling;
+        if (p.style.display === "block") {
+          p.style.display = "none";
+        } else {
+          faqItems.forEach((el) => {
+            const para = el.querySelector("br + *");
+            if (para) para.style.display = "none";
+          });
+          p.style.display = "block";
+        }
+      });
+    });
+  </script>
+</body>
+</html>
